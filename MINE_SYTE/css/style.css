@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Proxima Nova Rg';
+}
+header{
+    width: 100%;
+    background: url(../img/header/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header_nav_logo{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    top:0;
+    background: grey;
+}
+.slider_map{
+    height: 37vw;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.header_menu_em{
+    list-style-type: none;
+    padding: 1.5vw;
+    font-size: 1.1vw;
+}
+.header_menu{
+    display: flex;
+}
+.logo{
+  
+    width:15vw;
+}
+.change_language img{
+    width: 1.7vw;
+}
+.change_language{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+.change_language p{
+    margin-right: 5px;
+}
+.header_main_text{
+    color: white;
+    margin-left: 16vw;
+    
+   
+}
+.header_main_text h1{
+    font-size: 3.5vw;
+    font-family: 'Proxima Nova Th';
+}
+.header_main_text p{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.button{
+    margin-top: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0.7vw 1.5vw;
+    background: linear-gradient(80.39deg, #FF5665 -8.39%, #DD73DF 119.19%);
+    box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.71);
+    border-radius: 9px;
+    font-size: 1vw;
+    font-weight: 700;
+    position: absolute;
+}
+.header_menu a:hover{
+    transition: 1s;
+    color:#FF5665;
+}
+#left, #right{
+    width: 1vw;
+    cursor: pointer;
+}
+#right{
+    transform: rotate(180deg);
+}
+.change_image{
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+    padding-bottom: 1.5vw;
+}
+/*--------------------------------------- ADVANTAGES ------------------------------*/
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages__content{
+    display: flex;
+    width:67%;
+    justify-content: space-between;
+    margin-top: 3vw;
+}
+.advantages__content_em{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages__content_em h3{
+    font-size: 1.5vw;
+}
+.advantages__content_em img{
+    margin-bottom: 2vw;
+    width: 4.5vw;
+}
+.advantages__content_em p{
+    text-align: center;
+    padding: 0 2vw;
+    font-size: 1.2vw;
+}
+.advantages_h2{
+    font-size: 3.7vw;
+    margin-top: 7vw;
+    margin-bottom: 5vw;
+    font-family: 'Proxima Nova Th';
+}
+.advantages > img{
+    width: 80%;
+}
+.first__banner{
+    justify-content: space-between;
+    flex-direction: row;
+    background: linear-gradient(89.05deg, rgba(96, 62, 131, 0.75) 1.28%, rgba(46, 22, 70, 0.11) 101.64%), rgba(247, 247, 247, 0.25);
+    backdrop-filter: blur(26px);
+    padding: 4vw 14vw;
+    position: absolute;
+    margin-top: -7vw;
+}
+.first__banner .button{
+    position: static;
+    margin-top: 0;
+    padding: 1.1vw 1.9vw;
+    box-shadow: none;
+    font-weight: 300;
+}
+.first__banner a{
+    text-decoration: none;
+    color: white;
+}
+.first__banner p{
+    font-size: 4vw;
+    font-family: 'Proxima Nova Th';
+    font-weight: 700;
+    color: white;
+}
+
+

@@ -13,14 +13,6 @@ header{
 .header_nav_logo{
     display: flex;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    justify-content: space-around;
-    top:0;
-    background: grey;
-}
-.slider_map{
-    height: 37vw;
 }
 header a{
     text-decoration: none;
@@ -35,8 +27,8 @@ header a{
     display: flex;
 }
 .logo{
-  
-    width:15vw;
+    margin: 18px 16vw;
+    width:15vw
 }
 .change_language img{
     width: 1.7vw;
@@ -55,7 +47,7 @@ header a{
 .header_main_text{
     color: white;
     margin-left: 16vw;
-    
+    margin-top: 7vw;
    
 }
 .header_main_text h1{
@@ -96,7 +88,7 @@ header a{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-   
+    margin-top: 16vw;
     padding-bottom: 1.5vw;
 }
 /*--------------------------------------- ADVANTAGES ------------------------------*/

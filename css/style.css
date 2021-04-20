@@ -30,49 +30,46 @@ body {
 
 .main__hero>p {
     font-family: 'gilroy-medium';
- 
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 6px;
+    font-size: 0.93vw;
+    line-height: 1.15vw;
+    letter-spacing: 0.3vw;
     text-transform: uppercase;
     color: #FBD784;
     display: flex;
+    padding-top: 10.57vw;
     justify-content: center;
-    padding-top: 203px;
     padding-right: 34%;
 }
 
 .main__hero>h1 {
     font-family: 'Chronicle Display Semibold';
-    
     font-weight: 600;
-    font-size: 80px;
-    line-height: 100px;
+    font-size: 4.58vw;
+    line-height: 5.2vw;
     text-transform: capitalize;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
-    padding-top: 32px;
+    padding-top: 1.67vw;
 }
 
 .main__hero>h2 {
     font-family: 'gilroy-medium';
     font-style: normal;
-    
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 0.93vw;
+    line-height: 1.15vw;
     color: #f7f5f1;
     display: flex;
     justify-content: left;
-    padding-left: 37em;
-    padding-top: 23px;
+    padding-left: 22vw;
+    padding-top: 1.2vw;
 }
 
 .content__h1 {
     font-family: 'gilroy-medium';
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 6px;
+    font-size: 0.93vw;
+    line-height: 1.15vw;
+    letter-spacing: 0.31vw;
     text-transform: uppercase;
     color: #FBD784;
     display: flex;
@@ -80,18 +77,18 @@ body {
 }
 
 h2 {
-    font-family: 'Chronicle Display Semibold';    
-    font-size: 62px;
-    line-height: 85px;
+    font-family: 'Chronicle Display Semibold';
+    font-size: 3.3vw;
+    line-height: 4vw;
     color: #fff;
-    padding-bottom: 27px;
+    padding-bottom: 1.4vw;
 }
 
 p {
     color: #eee;
-    font-family: 'gilroy-medium';    
-    font-size: 18px;
-    line-height: 34px;
+    font-family: 'gilroy-medium';
+    font-size: 0.93vw;
+    line-height: 1.14vw;
 }
 
 .navbar__menu__top {
@@ -101,17 +98,17 @@ p {
     justify-content: space-between;
     list-style: none;
     font-family: 'gilroy-medium';
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: 1px;
+    font-size: 0.93vw;
+    line-height: 1.2vw;
+    letter-spacing: 0.05vw;
     padding-top: 64px;
-    padding-left: 13%;
-    padding-right: 13%;
+    padding-left: 4.1vw;
+    padding-right: 4.1vw;
 }
 
 .navbar__menu__top .logo {
-    width: 108px;
-    height: 24px;
+    width: 5.6vw;
+    height: 1.25vw;
 }
 
 .menu__item {
@@ -127,10 +124,10 @@ p {
 
 .navbar__menu__side {
     position: sticky;
-    width: 77px;
+    width: 5.5vw;
     height: 0px;
-    left: 1950px;
-    top: 326px;
+    left: 91.8vw;
+    top: 18.9vw;
     z-index: 10;
 }
 
@@ -142,11 +139,11 @@ p {
 }
 
 .menu__number {
-    font-family: 'gilroy-medium';    
-    font-size: 18px;
-    line-height: 23px;
-    padding-bottom: 1em;
-    padding-right: 2em;
+    font-family: 'gilroy-medium';
+    font-size: 0.93vw;
+    line-height: 1.2vw;
+    padding-bottom: 2vw;
+    padding-right: 1.75vw;
 }
 
 #progress__bar {
@@ -170,6 +167,8 @@ p {
 section {
     position: relative;
     min-height: 80vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -195,8 +194,13 @@ section {
 /* Landing Container Styles */
 
 .landing__container {
+    position: absolute;
     padding: 1em;
     text-align: left;
+    margin-left: 7.8vw;
+    margin-right: 35.41vw;
+    margin-top: 7.34vw;
+    margin-bottom: 7.4vw;
 }
 
 /* @media only screen and (min-width: 35em) {
@@ -433,9 +437,8 @@ section.your-active-class .landing__container::after {
 
 .nav__social {
     position: fixed;
-    /* border: solid red; */
-    top: 35vh;
-    left: 1vw;
+    top: 20.4vw;
+    left: 2vw;
     text-align: center;
 }
 
@@ -444,32 +447,25 @@ section.your-active-class .landing__container::after {
     margin-bottom: 2vw;
     margin-top: 2vw;
 }
+.social_net {
+    padding-top: 0.5vw
+}
 .menu_number:hover{
     transform: translateX(-1vw);
 }
-/* .nav__social {
-    position: sticky;
-    width: 77px;
-    height: 0px;
-    top: 359px;
-    z-index: 10;
-}
-.social_section{
-    cursor: pointer;
-    text-align: right;
-    list-style: none;
-    padding-top: 70px;
-}
-.social_net{
-    font-family: Alatsi;
-    font-style: normal;
+.all_sections {
     
-    font-size: 18px;
-    line-height: 23px;
-    padding-bottom: 1em;
-    padding-right: 2em;
+width: 76.14vw;
+    
+margin-left: 12vw;
+    
+margin-right: 12vw;
+    
+/* position: absolute; */
+    
+align-items: center;
 }
-#social_follow {
-    position: absolute;
-    transform: rotate(90deg);
-} */
+
+.right_img {
+    margin-left: 46.67vw;
+}

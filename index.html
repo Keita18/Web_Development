@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/chronicle.css">
     <link rel="stylesheet" href="fonts/gilroy.css">
+    <link rel="stylesheet" href="js/revealator/fm.revealator.jquery.css">
+<script src="js/revealator/jquery-1.11.3.min.js"></script>
+<script src="js/revealator/fm.revealator.jquery.js"></script>
 </head>
 <body>
     <!-------------------------Navigation_menu_sider------------------------------------->
@@ -54,7 +57,8 @@
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-        <section id="section01" data-nav="Section 01" class="your-active-class">
+        <div class="all_sections">
+            <section id="section01" data-nav="Section 01" class="your-active-class">
             <div class="landing__container">
                 <span class="content__h1">Get Started</span>
                 <h2>What level of hiker<br /> are you?</h2>
@@ -64,6 +68,7 @@
                 <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
                     porttitor tortor, eget elementum tortor mollis non.</p>
             </div>
+            <img class="right_img" src="./img/01.png">
         </section>
         <section id="section02" data-nav="Section 02">
             <div class="landing__container">
@@ -88,6 +93,7 @@
                 <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
                     porttitor tortor, eget elementum tortor mollis non.</p>
             </div>
+            <img class="right_img" src="./img/03.png">
         </section>
 
         <section id="section04" data-nav="Section 04">
@@ -102,6 +108,7 @@
                     porttitor tortor, eget elementum tortor mollis non.</p>
             </div>
         </section>
+        </div>
 
 
     </main>

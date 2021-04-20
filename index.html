@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNTN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/chronicle.css">
+    <link rel="stylesheet" href="fonts/gilroy.css">
+</head>
+<body>
+    <!-------------------------Navigation_menu_sider------------------------------------->
+    <div id="home__top"></div>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <nav class="navbar__menu__side">
+        <ul id="navbar__list" class="menu__section">
+            <!-- Navigation starts as empty UL that will be populated with JS -->
+        </ul>
+        <div id="progress__bar"></div>
+    </nav>
+
+    <nav class="nav__social">
+        <p id="social_follow">
+            Follow us
+           </p> 
+        <ul class="social_section">
+            <li class="social_net">
+                <a href="https://www.instagram.com"><img src="./img/instagram.svg" alt="instagram_link"></a>
+            </li>
+           <li class="social_net">
+               <a href="https://twitter.com"><img src="./img/twitter.svg" alt="twitter_link"></a>
+           </li> 
+        </ul>
+    </nav>
+    <!---------------------------------Main-------------------------------------------->
+    <main>
+        <header class="main__hero">
+            <nav class="navbar__menu__top">
+                <a class="logo" href="index.html"><img src="./img/Logo.png"></a>
+                <ul class="menu__item">
+                    <li class="menu__middle">Equipment</li>
+                    <li class="menu__middle">About us</li>
+                    <li class="menu__middle">Blog</li>
+                </ul>
+                <a>Account</a>
+            </nav>
+            <p>&#8212; A Hiking guide</p>
+            <h1>Be prepared for<br /> the Mountains and beyond! </h1>
+            <h2>scroll down <span class="bounce">&#8595;</span> </h2>
+        </header>
+        <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+        <section id="section01" data-nav="Section 01" class="your-active-class">
+            <div class="landing__container">
+                <span class="content__h1">Get Started</span>
+                <h2>What level of hiker<br /> are you?</h2>
+                <p>Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker.
+                    What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?</p>
+                <br />
+                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
+                    porttitor tortor, eget elementum tortor mollis non.</p>
+            </div>
+        </section>
+        <section id="section02" data-nav="Section 02">
+            <div class="landing__container">
+                <span class="content__h1">Hiking Essentials</span>
+                <h2>Picking the right<br /> Hiking Gear!</h2>
+                <p>The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular
+                    clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
+                <br />
+
+                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
+                    porttitor tortor, eget elementum tortor mollis non.</p>
+            </div>
+        </section>
+        <section id="section03" data-nav="Section 03">
+            <div class="landing__container">
+                <span class="content__h1">where you go is the key</span>
+                <h2>Understand Your <br /> Map & Timing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
+                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
+                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+                <br />
+                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
+                    porttitor tortor, eget elementum tortor mollis non.</p>
+            </div>
+        </section>
+
+        <section id="section04" data-nav="Section 04">
+            <div class="landing__container">
+                <span class="content__h1">Mentally prepared</span>
+                <h2>Are you ready!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
+                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
+                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+                <br />
+                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
+                    porttitor tortor, eget elementum tortor mollis non.</p>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="page__footer">
+        <p>&copy Suun</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

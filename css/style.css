@@ -1,0 +1,475 @@
+/* a comon lines */
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ---- Base Rules ---- */
+
+body {
+    background: rgba(11, 29, 38, 1);
+    margin: 0;
+    color: #fff;
+}
+
+
+/* Typeography General*/
+
+#home__top {
+    width: 0px;
+    height: 0px;
+}
+
+.main__hero>p {
+    font-family: 'gilroy-medium';
+ 
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+    display: flex;
+    justify-content: center;
+    padding-top: 203px;
+    padding-right: 34%;
+}
+
+.main__hero>h1 {
+    font-family: 'Chronicle Display Semibold';
+    
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.main__hero>h2 {
+    font-family: 'gilroy-medium';
+    font-style: normal;
+    
+    font-size: 18px;
+    line-height: 34px;
+    color: #f7f5f1;
+    display: flex;
+    justify-content: left;
+    padding-left: 37em;
+    padding-top: 23px;
+}
+
+.content__h1 {
+    font-family: 'gilroy-medium';
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+    display: flex;
+    justify-content: start;
+}
+
+h2 {
+    font-family: 'Chronicle Display Semibold';    
+    font-size: 62px;
+    line-height: 85px;
+    color: #fff;
+    padding-bottom: 27px;
+}
+
+p {
+    color: #eee;
+    font-family: 'gilroy-medium';    
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.navbar__menu__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'gilroy-medium';
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    padding-top: 64px;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.navbar__menu__top .logo {
+    width: 108px;
+    height: 24px;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu__middle {
+    padding-right: 2em;
+}
+
+.navbar__menu__side {
+    position: sticky;
+    width: 77px;
+    height: 0px;
+    left: 1950px;
+    top: 326px;
+    z-index: 10;
+}
+
+.menu__section {
+    cursor: pointer;
+    text-align: right;
+    list-style: none;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu__number {
+    font-family: 'gilroy-medium';    
+    font-size: 18px;
+    line-height: 23px;
+    padding-bottom: 1em;
+    padding-right: 2em;
+}
+
+#progress__bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FBD784;
+    width: 3px;
+    height: 0px;
+}
+
+
+/* ---- Layout Rules ---- */
+
+.main__hero {
+    min-height: 1900px;
+    background: url('../img/HGpng.png') no-repeat center;
+    background-size: auto;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+
+/* ---- Module Rules ---- */
+
+
+/* Footer Styles */
+
+.page__footer {
+    background: #0B1D26;
+    padding: 3em;
+    margin-left: 10%;
+}
+
+.page__footer p {
+    color: #FBD784;
+}
+
+
+/* ---- Theme Rules ---- */
+
+
+/* Landing Container Styles */
+
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+
+/* @media only screen and (min-width: 35em) {
+    .landing__container {
+        max-width: 50em;
+        padding: 4em 23em;
+    }
+} */
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 5%;
+    margin-left: auto;
+    text-align: left;
+    max-width: 50em;
+}
+
+
+/* Background Circles */
+
+
+/* Note that background circles are created with psuedo elements before and after */
+
+
+/* Circles appear to be random do to use of :nth-of-type psuedo class */
+
+section:nth-of-type(odd) .landing__container::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.187);
+    position: absolute;
+    z-index: -5;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+section:nth-of-type(even) .landing__container::before {
+    content: '';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+section:nth-of-type(3n) .landing__container::after {
+    content: '';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+section:nth-of-type(3n+1) .landing__container::after {
+    content: '';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .2) 100%);
+    position: absolute;
+    right: 20vw;
+    bottom: -5em;
+    z-index: -5;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+
+/* ---- Theme State Rules ---- */
+
+
+/* Section Active Styles */
+
+
+/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+
+
+
+section.your-active-class .landing__container::before {
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+}
+
+section.your-active-class .landing__container::after {
+    opacity: 1;
+    animation: rotate 5s linear 0s infinite forwards reverse;
+}
+
+
+/* Section Active Styles Keyframe Animations */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    60% {
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+}
+
+/* @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+    .main__hero>p {
+        justify-content: center;
+        padding-right: 40%;
+    }
+    .main__hero>h2 {
+        padding-left: 25em;
+    }
+    .navbar__menu__top {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .landing__container {
+        padding: 2em 4em;
+    }
+    .main__hero>p {
+        padding-top: 150px;
+        padding-left: 2em;
+    }
+    .main__hero>h2 {
+        padding-left: 2em;
+    }
+    .main__hero>h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main__hero>h2 {
+        display: none;
+    }
+    .main__hero>h1 {
+        font-size: 40px;
+    }
+    .main__hero>p {
+        padding-left: 7em;
+    }
+    .menu__section {
+        margin-right: 5px;
+    }
+    #progress__bar {
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    h2 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .navbar__menu__top {
+        font-size: 10px;
+    }
+    .main__hero {
+        min-height: auto;
+    }
+    .navbar__menu__top {
+        padding-top: 4px;
+    }
+    .menu__middle {
+        padding-right: 1em;
+    }
+    .main__hero>p {
+        padding-top: 50px;
+    }
+    .main__hero>h1 {
+        line-height: 60px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .menu__number {
+        font-size: 12px;
+        line-height: 13px;
+        padding-right: 1em;
+    }
+    .menu__section {
+        margin-right: 10px;
+    }
+    #progress__bar {
+        right: 10px;
+    }
+} */
+
+.nav__social {
+    position: fixed;
+    /* border: solid red; */
+    top: 35vh;
+    left: 1vw;
+    text-align: center;
+}
+
+.nav__social p {
+    transform: rotate(90deg);
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+.menu_number:hover{
+    transform: translateX(-1vw);
+}
+/* .nav__social {
+    position: sticky;
+    width: 77px;
+    height: 0px;
+    top: 359px;
+    z-index: 10;
+}
+.social_section{
+    cursor: pointer;
+    text-align: right;
+    list-style: none;
+    padding-top: 70px;
+}
+.social_net{
+    font-family: Alatsi;
+    font-style: normal;
+    
+    font-size: 18px;
+    line-height: 23px;
+    padding-bottom: 1em;
+    padding-right: 2em;
+}
+#social_follow {
+    position: absolute;
+    transform: rotate(90deg);
+} */

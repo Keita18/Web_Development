@@ -1,12 +1,3 @@
-var last_id='0';
-function move_left(id){
-    if(last_id!='0'){
-        document.getElementById(last_id).style.transform='translateX(0.5vw)';
-    }
-    document.getElementById(id).style.transform='translateX(-1vw)';
-    last_id=id;
-}
-
 ///We create a buffer to have a smoother nicer transition when switching sections
 const TOP_ANIMATION_BUFFER = -250;
 const BOTTOM_ANIMATION_BUFFER = 200;
@@ -47,9 +38,11 @@ function addClickHandlers() {
 //add when necessary. The same with if, splitting it into two makes it more readable
 function activateSection() {
     const allSections = document.querySelectorAll('section');
+    const menu__number = document.getElementsByClassName('menu__number');
 
     for (let i = 0; i < allSections.length; i++) {
-        allSections[i].classList.remove('your-active-class');
+        // allSections[i].classList.remove('your-active-class');
+        menu__number[i+1].style.transform='translateX(0vw)';
     }
 
     for (let i = 0; i < allSections.length; i++) {
@@ -60,7 +53,8 @@ function activateSection() {
         if (bBox.top > document.documentElement.clientHeight - BOTTOM_ANIMATION_BUFFER) {
             continue;
         }
-        allSections[i].classList.add('your-active-class');
+        // allSections[i].classList.add('your-active-class');
+        menu__number[i + 1].style.transform='translateX(-0.5vw)';
     }
 
 };
@@ -84,3 +78,20 @@ window.addEventListener('scroll', function(event) {
     animateBar();
     activateSection();
 });
+
+/// ---------------- readmore func---------
+function readmore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("more_bnt");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "read less";
+      moreText.style.display = "inline";
+    }
+  }

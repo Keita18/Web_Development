@@ -18,6 +18,8 @@ body {
     background: rgba(11, 29, 38, 1);
     margin    : 0;
     color     : #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -58,11 +60,11 @@ header>p {
 }
 
 header p::before {
-    display: inline-block;
-    content: "";
+    display   : inline-block;
+    content   : "";
     border-top: 0.1vw solid #FBD784;
-    width: 3.75vw;
-    margin: 0.5vw 1.66vw 0px 0px;
+    width     : 3.75vw;
+    margin    : 0.5vw 1.66vw 0px 0px;
 }
 
 header>h1 {
@@ -180,6 +182,7 @@ header {
     height         : 98vw;
     background     : url('../img/HGpng.png') no-repeat center;
     background-size: auto;
+    background-size: 101vw;
 }
 
 section {
@@ -198,23 +201,10 @@ section {
     margin-left : 12vw;
     margin-right: 12vw;
     align-items : center;
+    margin-top: 65vw;
 }
 
 /* ---- Module Rules ---- */
-
-
-/* Footer Styles */
-
-.page__footer {
-    background : #0B1D26;
-    padding    : 3em;
-    margin-left: 10%;
-}
-
-.page__footer p {
-    color: #FBD784;
-}
-
 
 /* ---- Theme Rules ---- */
 
@@ -224,19 +214,18 @@ section {
 #landing__container {
     position     : absolute;
     text-align   : left;
-    margin-left  : 7.8vw;
-    margin-right : 35.41vw;
-    margin-top   : 7.34vw;
+    padding-right: 35.41vw;
     margin-bottom: 7.4vw;
+    height       : 7vw;
+    padding-top  : 7.34vw;
+    padding-left : 7.8vw;
 }
 
 section:nth-of-type(even) #landing__container {
-    position     : absolute;
-    text-align   : left;
     margin-left  : 43.23vw;
     margin-right : 0;
-    margin-top   : 7.34vw;
-    margin-bottom: 7.4vw;
+    padding-right: 0px;
+    padding-left : 0px;
 }
 
 .content__h1 {
@@ -249,20 +238,26 @@ section:nth-of-type(even) #landing__container {
     display        : flex;
     justify-content: start;
 }
+
 .content__h1::before {
-    display: inline-block;
-    content: "";
+    display   : inline-block;
+    content   : "";
     border-top: 0.1vw solid #FBD784;
-    width: 3.75vw;
-    margin: 0.5vw 1.25vw 0px 0px;
+    width     : 3.75vw;
+    margin    : 0.5vw 1.25vw 0px 0px;
 }
 
-#right_img {
-    margin-left: 46.67vw;
+#right__img {
+    margin-left: 46.5vw;
 }
 
 #left__img {
-    margin-right: 46.67vw;
+    margin-right: 45.4vw;
+}
+
+#img__animation {
+    width : 29.6vw;
+    height: 14vw;
 }
 
 #more {
@@ -271,22 +266,39 @@ section:nth-of-type(even) #landing__container {
 
 #more_bnt {
     text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    background: none;
-    color: #FBD784;
-    border: none;
-    font-family: 'gilroy-medium';
-    font-size: 0.93vw;
-    margin-top: 1.14vw;
-    text-transform: lowercase;
+    display        : inline-block;
+    cursor         : pointer;
+    background     : none;
+    color          : #FBD784;
+    border         : none;
+    font-family    : 'gilroy-medium';
+    font-size      : 0.93vw;
+    margin-top     : 1.14vw;
+    text-transform : lowercase;
 }
+
 .more_bnt::after {
     font-weight: 700;
-    font-size: 1.2vw;
+    font-size  : 1.2vw;
     margin-left: 0.5vw;
     align-items: center;
-    content: "\27F6";
+    content    : "\27F6";
+}
+
+.number {
+    position   : absolute;
+    left       : 0;
+    top        : 5.28%;
+    font-family: 'gilroy-medium';
+    font-weight: bold;
+    font-size  : 12.5vw;
+    line-height: 12.5vw;
+    color      : #FFFFFF;
+    opacity    : 0.1;
+}
+
+section:nth-of-type(even) .number {
+    left: 46.51%;
 }
 
 .bounce {
@@ -321,4 +333,52 @@ section:nth-of-type(even) #landing__container {
         -webkit-transform: translateY(5px);
         transform        : translateY(5px);
     }
+}
+
+
+/* Footer Styles */
+
+.page__footer {
+    margin-top   : 10.41vw;
+    margin-bottom: 6.75vw;
+    display      : flex;
+}
+
+.page__footer p {
+
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size  : 0.93vw;
+    line-height: 1.66;
+    margin-top : 1.25vw;
+    width      : 15.75vw;
+}
+
+footer img {
+    position: relative;
+    width   : 5.62vw;
+}
+
+.footer__h1 {
+    font-size: 1.25vw;
+    color    : #FBD784;
+}
+
+footer li {
+    cursor     : pointer;
+    padding-top: 1.25vw;
+    color      : rgba(255, 255, 255, 1);
+    font-family: 'gilroy-medium';
+    font-size  : 0.93vw;
+    line-height: 1.2vw;
+}
+
+.blog__menu {
+    margin-left: 30.5vw;
+}
+
+
+
+.mntn__menu {
+    margin-left: 11vw;
 }

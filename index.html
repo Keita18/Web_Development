@@ -61,6 +61,7 @@
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
         <section id="section01" data-nav="Section 01">
+            <span class="number">01</span>
             <div id="landing__container" class="revealator-zoomout revealator-delay revealator-within">
                 <span class="content__h1">Get Started</span>
                 <h2>What level of hiker<br /> are you?</h2>
@@ -85,10 +86,13 @@
                 <button onclick="readmore()" id="more_bnt" class="more_bnt">read mores </button>
 
             </div>
-            <img id="right_img" class="revealator-zoomout revealator-delay1 revealator-partially-below"
-                src="./img/01.png">
+            <div id="img__animation" class="revealator-zoomout revealator-delay1 revealator-partially-below">
+                <img id="right__img" src="./img/01.png">
+            </div>
+
         </section>
         <section id="section02" data-nav="Section 02">
+            <span class="number">02</span>
             <div id="landing__container" class="revealator-zoomout revealator-delay revealator-within">
                 <span class="content__h1">Hiking Essentials</span>
                 <h2>Picking the right<br /> Hiking Gear!</h2>
@@ -103,10 +107,12 @@
                     consectetur porttitor. Suspendisse imperdiet
                     porttitor tortor, eget elementum tortor mollis non.</p>
             </div>
-            <img id="left__img" class="revealator-zoomout revealator-delay1 revealator-partially-below"
-                src="./img/02.png">
+            <div id="img__animation" class="revealator-zoomout revealator-delay1 revealator-partially-below">
+                <img id="left__img" src="./img/02.png">
+            </div>
         </section>
         <section id="section03" data-nav="Section 03">
+            <span class="number">03</span>
             <div id="landing__container" class="revealator-zoomout revealator-delay revealator-within">
                 <span class="content__h1">where you go is the key</span>
                 <h2>Understand Your <br /> Map & Timing</h2>
@@ -125,13 +131,15 @@
                     consectetur porttitor. Suspendisse imperdiet
                     porttitor tortor, eget elementum tortor mollis non.</p>
             </div>
-            <img id="right_img" class="revealator-zoomout revealator-delay1 revealator-partially-below"
-                src="./img/03.png">
+            <div id="img__animation" class="revealator-zoomout revealator-delay1 revealator-partially-below">
+                <img id="right__img" src="./img/03.png">
+            </div>
         </section>
 
         <section id="section04" data-nav="Section 04">
+            <span class="number">04</span>
             <div id="landing__container" class="revealator-zoomout revealator-delay1 revealator-within">
-                <span class="content__h1">Mentally prepared</span>
+                <span class="content__h1">Full Determination</span>
                 <h2>Are you ready!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus
                     pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
@@ -150,7 +158,46 @@
             </div>
         </section>
         <footer class="page__footer">
-            <p>&copy Suun</p>
+            <div>
+            <a href="index.html"><img src="./img/Logo.png"></a>
+            <p>Get out there & discover your next slope, mountain & destination!</p>
+            </div>
+
+            <nav class="blog__menu">
+                <span class="footer__h1">More on The Blog</span>
+
+                <ul>
+                    <a href="" >
+                        <li class="">About MNTN</li>
+                    </a>
+                    <a href="">
+                        <li>Contributors & Writers</li>
+                    </a>
+                    <a href="" >
+                        <li>Write For Us</li>
+                    </a>
+                    <a href="" >
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="">
+                        <li>Privacy Policy</li>
+                    </a>
+                </ul>
+            </nav>
+            <nav class="mntn__menu">
+                <span class="footer__h1">More on MNTN</span>
+                <ul>
+                    <a href="">
+                        <li>The Team</li>
+                    </a>
+                    <a href="">
+                        <li>Jobs</li>
+                    </a>
+                    <a href="">
+                        <li>Press</li>
+                    </a>
+                </ul>
+            </nav>
         </footer>
     </main>
 

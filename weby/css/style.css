@@ -311,6 +311,7 @@ footer {
     font-size   : 0.83vw;
     padding-left: 3vw;
     align-items : center;
+    list-style: none;
 }
 
 .menu__middle {
@@ -341,6 +342,7 @@ footer {
     flex-direction: column;
     padding       : 0;
     margin        : 0;
+    list-style: none;
 }
 
 .social__item__em {
